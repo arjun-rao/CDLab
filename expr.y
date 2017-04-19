@@ -10,12 +10,12 @@
 	r: '*' f r |
 	f: '(' s ')' | a
 %%
-main()
+int main()
 {
 	printf("Enter input:");
 	yyparse();
 	printf("Valid String\n");
-	return;
+	return 0;
 }
 
 int yyerror( char *s)
